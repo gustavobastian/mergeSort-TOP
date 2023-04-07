@@ -1,5 +1,5 @@
 const { mergeSort } = require('./mergeSort.js');
-const { fibonacci } = require('./fibonacci.js');
+const { fibonacci,fibs } = require('./fibonacci.js');
 
 
 
@@ -42,8 +42,9 @@ const mainContent= function(){
         let fiboResultbox=document.createElement('div')
         fiboResultbox.className="resultbox";
 
-        let fiboResultText=document.createElement('div')
+        let fiboResultText=document.createElement('textArea')
         fiboResultText.className="resultText";
+        fiboResultText.rows=50;
         fiboResultText.id="fiboResultText";
         fiboResultText.innerText="Result = ";
         fiboResultbox.appendChild(fiboResultText);
@@ -95,10 +96,20 @@ const mainContent= function(){
         let executeFiboButtonL=document.getElementById("executeFiboButton")
         executeFiboButtonL.addEventListener("click",function(){
             console.log("input "+fibonacciInput)
-            let resultFibo=fibonacci(fibonacciInput);
+            let resultFibo=fibs(fibonacciInput);
+
+            let fiboText="";
+            let i=0;
+            resultFibo.forEach(element => {
+                if(i==0)
+                    fiboText+=element;
+                else
+                    fiboText+=","+element;
+                i++;    
+            });
             console.log(resultFibo);
             let resultElement=document.getElementById("fiboResultText");
-            resultElement.innerText="Result:"+parseInt(resultFibo);
+            resultElement.innerText="Result:"+fiboText;
         })
 
         let inputListenerFibo=document.getElementById("fiboNumber");
