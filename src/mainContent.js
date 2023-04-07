@@ -16,7 +16,7 @@ const mainContent= function(){
         let contentMessageFibo=document.createElement('div')
         contentMessageFibo.className="message";
         let messageFibo=document.createElement('p')
-        messageFibo.innerText="Please insert Number for get the fibonacci sequence"
+        messageFibo.innerText="Please insert Number for get the fibonacci value"
         contentMessageFibo.appendChild(messageFibo);
         content.appendChild(contentMessageFibo);
 
