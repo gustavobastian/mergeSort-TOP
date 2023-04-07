@@ -1,5 +1,5 @@
 const { mergeSort } = require('./mergeSort.js');
-const { fibonacci,fibs } = require('./fibonacci.js');
+const { fibs } = require('./fibonacci.js');
 
 
 
