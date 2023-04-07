@@ -15,7 +15,7 @@
   \***********************/
 /***/ ((module) => {
 
-eval("const headerList= function(){\n    let content=document.getElementById(\"headerPlace\")        \n    let contentHeader=document.createElement('div')\n    contentHeader.className=\"headerContent\";\n    let textHeader=document.createElement('p')\n    textHeader.innerText=\"Simple implementation of MergeSort in javascript\"\n    contentHeader.appendChild(textHeader);\n    content.appendChild(contentHeader);\n    return content;\n}\n\nmodule.exports={headerList}\n\n\n//# sourceURL=webpack://mergeSort-app/./src/header.js?");
+eval("const headerList= function(){\n    let content=document.getElementById(\"headerPlace\")        \n    let contentHeader=document.createElement('div')\n    contentHeader.className=\"headerContent\";\n    let textHeader=document.createElement('p')\n    textHeader.innerText=\"Simple implementation of MergeSort and Fibonacci in javascript\"\n    contentHeader.appendChild(textHeader);\n    content.appendChild(contentHeader);\n    return content;\n}\n\nmodule.exports={headerList}\n\n\n//# sourceURL=webpack://mergeSort-app/./src/header.js?");
 
 /***/ })
 
