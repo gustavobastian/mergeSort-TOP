@@ -18,6 +18,9 @@ module.exports = {
     },                  
     mergeSort:{
       import:'./src/mergeSort.js'
+    },                  
+    fibonacci:{
+      import:'./src/fibonacci.js'
     }
   },
   plugins: [
