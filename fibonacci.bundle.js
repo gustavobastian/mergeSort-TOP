@@ -16,7 +16,7 @@
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"fibonacci\": () => (/* binding */ fibonacci)\n/* harmony export */ });\nfunction fibonacci(n){    \n    if(n==0)\n        return 0;\n    if(n==1)\n        return 1;\n    else\n        return fibonacci(n-1) + fibonacci(n-2)   \n}\n\n\n//# sourceURL=webpack://mergeSort-app/./src/fibonacci.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"fibonacci\": () => (/* binding */ fibonacci),\n/* harmony export */   \"fibs\": () => (/* binding */ fibs)\n/* harmony export */ });\nfunction fibs(n){\n    let output=[];\n    for (let i=0;i<n;i++){\n        if(i==0)\n            {output.push(0);}\n        if(i==1)\n            {output.push(1);}    \n        if(i>1)    \n            {output.push(output[i-1]+output[i-2])}\n    }\n    return output;\n}\n\nfunction fibonacci(n){    \n    if(n==0)\n        return 0;\n    if(n==1)\n        return 1;\n    else\n        return fibonacci(n-1) + fibonacci(n-2)   \n}\n\n\n//# sourceURL=webpack://mergeSort-app/./src/fibonacci.js?");
 
 /***/ })
 
